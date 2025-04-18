@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIG RIVER STORE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Homenaje&family=Poppins:wght@200;300;400;600;700&family=Yatra+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <p>Frete Grátis acima de R$399,90 | Ganhe 5% de Desconto pagando no Pix! | Parcele em até 6x sem juros</p>
+        <nav>
+            <h1>BIG RIVER STORE</h1>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Roupas masculinas</a></li>
+                <li><a href="#">Acessórios</a></li>
+                <li><a href="">Sobre</a></li>
+            </ul>
+
+            <!-- BOX ICONES DA NAVEGAÇAO -->
+            <div class="menu-icons">
+                <input class="search" type="search" placeholder="O que está proucurando?"><i class="fas fa-search"></i>
+                <i class="fas fa-user"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+
+        <!-- BANNER PRINCIPAL -->
+        <section class="banner">
+            <div class="carrossel">
+                <img src="/assets/img/high.webp" class="slide" alt="Imagem de destaque da loja">
+                <img src="/assets/img/banner.png" class="slide" alt="imagem de destaque da loja"> 
+            </div>
+        </section>
+
+        <!-- BOX ICONES -->
+        <div class="icones">
+            <i class='bx bxs-credit-card'></i>
+            <p>Aceitamos todos cartões</p>
+            <i class='bx bxs-truck'></i>
+            <p>Frete grátis acima de R$399,90</p>
+            <i class='bx bxs-lock-alt'></i>
+            <p>Compra 100% segura.</p>
+
+        </div>
+        
+        <section class="lançamentos">
+            <h2 class="lançamentos_texto">LANÇAMENTOS</h2>
+            <div class="lançamentos_produtos">
+                <article class="calçacargo">
+                    <img src="/assets/img/calcapants.jpg" alt="Calça Cargo">
+                    <p>CALÇAS MASCULINAS, CALÇAS CARGO</p>
+                    <p style="color: rgb(238, 92, 92);">R$199,90</p>
+                    <p style="color: rgb(34, 124, 34);"><strong>R$99,90</strong></p>
+                    <button>Comprar</button>
+                </article>
+
+                <article class="calçacargo">
+                    <img src="/assets/img/calcapants4.jpg" alt="Calça Cargo modelo 2">
+                    <p>CALÇAS MASCULINAS, CALÇAS CARGO</p>
+                    <p style="color: rgb(238, 92, 92);">R$199,90</p>
+                    <p style="color: rgb(34, 124, 34);"><strong>R$99,90</strong></p>
+                    <button>Comprar</button>
+                </article>
+                
+                <article class="calçacargo">
+                    <img src="/assets/img/calcapants3.jpg" alt="Calça Cargo modelo 3">
+                    <p>CALÇAS MASCULINAS, CALÇAS CARGO</p>
+                    <p style="color: rgb(238, 92, 92);">R$199,90</p>
+                    <p style="color: rgb(34, 124, 34);"><strong>R$99,90</strong></p>
+                    <button>Comprar</button>
+                </article>
+                
+                <article class="calçacargo">
+                    <img src="/assets/img/calcaautumn.jpg" alt="Calça Casual">
+                    <p>CASUAL PANTS</p>
+                    <p style="color: rgb(238, 92, 92);">R$199,90</p>
+                    <p style="color: rgb(34, 124, 34);"><strong>R$99,90</strong></p>
+                    <button>Comprar</button>
+                </article>
+
+            </div> 
+        </section> <!-- fim calça estilos-->
+
+        <section>
+            <div class="sobre">
+                <h2>SOBRE A BIG RIVER STORE</h2>
+                <p>A BIG RIVER STORE é uma loja de roupas masculinas e acessórios que visa atender o público que busca por produtos de qualidade e com preços acessíveis.
+                    Nossos produtos são selecionados com muito cuidado e carinho para que você tenha a melhor experiência de compra.
+                    Aproveite nossas promoções e descontos exclusivos!</p>
+            </div>
+        </section>
+
+
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 BIG RIVER STORE - Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        let index = 0;
+      
+        setInterval(() => {
+          const slide = document.querySelector('.slide');
+          index = (index + 1) % 2; // troca entre 0, 1 e 2 (3 banners)
+          slide.style.transform = `translateX(-${index * 100}%)`;
+        }, 3000); // troca a cada 3 segundos
+      </script>
+</body>
+</html>

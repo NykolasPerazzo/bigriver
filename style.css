@@ -110,18 +110,16 @@ nav ul li a {
     overflow: hidden;
     margin: 0 auto;
     border-radius: 10px;
-    margin: 2em 0 2em 0;
 }
 
 .carrossel {
     display: flex;
-    width: 300%;
+    width: 100%;
     transition: transform 0.5s ease;
 }
 
 .slide {
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 

@@ -26,7 +26,7 @@ header {
 
 header p {
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.5em;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
     padding: 9px;
@@ -86,11 +86,12 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: auto;
-    margin: 2em 0;
+    padding: 3em;
+    margin: 3em 0;
 }
 
 .icones i {
+
     font-size: 2em;
     color: #000000;
     padding-right: 0.5em;
@@ -112,24 +113,17 @@ nav ul li a {
 }
 
 .carrossel {
-    display: flex;
     width: 100%;
-    transition: transform 0.5s ease;
 }
 
-.slide {
-    width: 100%;
-    object-fit: cover;
-}
-
-.lançamentos {
+.lancamentos {
     background-color: white
 }
 
-.lançamentos_texto {
+.lancamentos_texto {
     font-size: 2.5em;
-    font-weight: 600;
-    font-style: italic, bold;
+    font-style: italic;
+    font-weight: bold;
     text-align: center;
     padding: 2.1em;
     margin: 2em 0 2em 0;
@@ -141,7 +135,7 @@ nav ul li a {
     
 }
 
-.lançamentos_produtos {
+.lancamentos_produtos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -149,15 +143,36 @@ nav ul li a {
     padding: 20px;
 }
 
-.calçacargo {
+.calcacargo {
     max-width: 200px;
     text-align: center;
 }
 
-.calçacargo img {
+.calcacargo img {
     width: 100%;
     object-fit: cover;
     border: 1px solid #401F1C;
+}
+
+
+.novidades {
+    position: relative;
+
+}
+
+.novidades_texto {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em 0;
+
+}
+
+.novidades_produtos {
+    display: flex;
+    width: 100%;
+    gap: 2em;
+
 }
 
 .sobre {
@@ -181,7 +196,7 @@ nav ul li a {
     text-align: center;
     padding: 2em;
     color: #401F1C;
-    font-size: 1,5em;
+    font-size: 1.5em;
     text-shadow: 3px 4px 2px rgba(0, 0, 0, 0.2);
 
 }
